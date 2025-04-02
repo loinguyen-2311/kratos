@@ -1,6 +1,5 @@
 FROM oryd/kratos:latest
 
-COPY ./kratos.yml /etc/config/kratos.yml
-COPY ./identity.schema.json /etc/config/identity.schema.json
+COPY . /etc/config/
 
 CMD ["serve", "-c", "/etc/config/kratos.yml"]
