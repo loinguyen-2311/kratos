@@ -6,7 +6,7 @@ COPY ./kratos.yml /etc/config/kratos.yml
 # Copy the identity schema file
 COPY ./identity.schema.json /etc/config/kratos/identity.schema.json
 
-EXPOSE 4444 3333
+EXPOSE 3333 4444
 
 # Start the Kratos server
 CMD ["serve", "-c", "/etc/config/kratos.yml"]
