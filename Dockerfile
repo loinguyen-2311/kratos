@@ -7,8 +7,9 @@ COPY ./kratos.yml /etc/config/kratos.yml
 COPY ./identity.schema.json /etc/config/kratos/identity.schema.json
 
 # Start the Kratos server
-CMD ["serve", "-c", "/etc/config/kratos.yml"]
+# CMD ["serve", "-c", "/etc/config/kratos.yml"]
 
+CMD ["/oryd/kratos", "migrate", "sql", "-c", "/etc/config/kratos.yml", "-e", "--yes"]
 
 # FROM oryd/kratos:latest
 
