@@ -3,11 +3,11 @@ dsn: postgresql://neondb_owner:npg_ih1be8BLgMvV@ep-silent-shape-a1lez5aw-pooler.
 
 serve:
   public:
-    base_url: http://kratos:3333/
+    base_url: http://kratos:4433/
     cors:
       enabled: true
-  admin:
-    base_url: http://kratos:4444/
+  # admin:
+  #   base_url: http://kratos:4444/
 selfservice:
   default_browser_return_url: http://127.0.0.1:4455/welcome
   allowed_return_urls:
