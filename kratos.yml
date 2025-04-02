@@ -1,4 +1,4 @@
-dsn: postgres://admin:pvFtFhvD-LtKbw-1PCwNg0Tfjd-PPc@postgresd:5432/charming-wolf?sslmode=disable
+dsn: postgresql://neondb_owner:npg_ih1be8BLgMvV@ep-silent-shape-a1lez5aw-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=disable
 
 serve:
   public:
